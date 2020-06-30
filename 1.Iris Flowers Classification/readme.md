@@ -27,9 +27,13 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 
 **Wanna know more about him** Just [click here](https://en.wikipedia.org/wiki/Ronald_Fisher)
 
-**This can be Explain about the Iris Flower Data Measurements**
+## **This can be Explain about the Iris Flower Data Measurements** ##
 ![](Images/1.JPG)
 
 ## Directory Tree Structure ##
+
+## Technologies Used ##
+
+<img src="Images/10.jpg" width="40" align="center">
 
 
