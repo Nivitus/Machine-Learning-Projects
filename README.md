@@ -1,4 +1,4 @@
 # Machine-Learning-Projects
-* It has something 
-**nivi** text
+* It has something.
+ **nivi** text
 
