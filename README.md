@@ -1,7 +1,7 @@
 # Machine-Learning-Projects
 ## Table of Content ##
-* Overview
-* Motivation
+* ### Overview ###
+* ### Motivation ###
 * Installation
 * Directory Tree Structure
 * Technologies used
