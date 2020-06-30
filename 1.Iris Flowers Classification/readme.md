@@ -20,4 +20,6 @@ What could be a perfect way to utilize unfortunate lockdown period? Like most of
 The Code is written in Python 3.7. If you don't have Python installed just [clik here](https://www.python.org/downloads/) and install python on your system. 
 If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, such as numpy, pandas, matplotlib and sklearn.
 
+## About the Data ##
+The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in his 1936 paper the use of multiple measurements in taxonomic problems as an exampleof linear discriminant analysis.His contribution to statistics is way beyond the Fisher's exact test. For example, he developedthe maximum likelihood estimation and the analysis of variance (more commonly known as its acronym ANOVA) test. For these important contributions, he has been highly regarded in the history of modern statistics, as noted on his Wikipedia page.
 
