@@ -1,4 +1,4 @@
-# Machine-Learning-Projects #
+# Iris Flower Classification #
 ## Table of Content ##
 * #### Overview ####
 * #### Motivation ####
