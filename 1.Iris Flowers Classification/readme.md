@@ -57,7 +57,7 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 * We can find two kind of data from kaggle which is CSV data and SQLITE database.
 * Each iris species consists of 50 samples.
 * The features of iris flower are Sepal Length in cm, Sepal Width in cm, Petal Length in cm and Petal Width in cm.
-* In this Iris dataset in avilable on **[sklearn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html) library.
+* In this Iris dataset in avilable on **[sklearn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)** library.
 ### The following code can help to get the Iris dataset from sklearn
 
 ```python
