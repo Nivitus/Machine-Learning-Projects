@@ -1,6 +1,6 @@
 # Iris Flower Classification #
 ## Table of Content ##
-* #### [Overview](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#overview) ####
+* #### [Overview](#overview) ####
 * #### [Motivation](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#motivation) ####
 * #### [Installation](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#installation) ####
 * #### [About the Data](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#about-the-data) ####
