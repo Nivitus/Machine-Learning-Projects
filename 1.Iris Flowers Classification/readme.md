@@ -5,8 +5,8 @@
 - [Installation](#installation) 
 - [About the Data](#about-the-data) 
 - [Directory Tree Structure](#directory-tree-structure) 
-- [Packages Used](#packages-used) 
 - [Technologies Used](#technologies-used) 
+- [Packages Used](#packages-used)
 - [Data Collection](#data-collection)
 - [Data Cleaning](#data-cleaning) 
 - [Exploratory Data Analysis](#exploratory-data-analysis) 
@@ -31,7 +31,7 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 
 ![Ronald Fisher](Images/Ronald.jpg)
 
-**Wanna know more about him** Just [click here](https://en.wikipedia.org/wiki/Ronald_Fisher)
+** This is Ronald Fisher If you Wanna know more about him** Just [click here](https://en.wikipedia.org/wiki/Ronald_Fisher)
 
 ## **This can be Explain about the Iris Flower Data Measurements** ##
 ![](Images/1.JPG)
@@ -51,6 +51,31 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
   ![](Images/17.jpg)
 
 ## Data Collection 
+
+* I got the dataset from Kaggle if you wanaa get it [click here](https://www.kaggle.com/arshid/iris-flower-dataset).
+* This dataset consists of 3 categories of species which is setosa, versicolor and virginica.
+* We can find two kind of data from kaggle which is CSV data and SQLITE database.
+* Each iris species consists of 50 samples.
+* The features of iris flower are Sepal Length in cm, Sepal Width in cm, Petal Length in cm and Petal Width in cm.
+* In this Iris dataset in avilable on **[sklearn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html) library.
+### The following code can help to get the Iris dataset from sklearn
+
+```python
+# TODO : Load Iris Dataset
+
+# Load iris Dataset from sklearn
+from sklearn import datasets
+iris = datasets.load_iris()
+
+# Load Iris csv dataset
+iris_csv = pd.read_csv('../data/Iris.csv')
+
+# Load Iris sqlite data
+data = sqlite3.connect('../data/database.sqlite')
+query = data.execute('SELECT * FROM Iris')
+columns = [col[0] for col in query.description]
+iris_db = pd.DataFrame.from_records(data = query.fetchall(), columns = columns)
+```
 
 ## Data Cleaning 
 
