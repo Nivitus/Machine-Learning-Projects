@@ -5,6 +5,7 @@
 * #### Installation ####
 * #### About the Data ####
 * #### Directory Tree Structure ####
+* #### Packages Used ####
 * #### Technologies used ####
 * #### Deployement ####
 * #### Team #### 
@@ -34,8 +35,6 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 
 ## Technologies Used ##
 
-<img src="Images/10.jpg" width="40" align="center">
-
-![](Images/10.JPG)
+![](Images/10.JPG) 
 
 
