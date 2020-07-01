@@ -1,4 +1,6 @@
 # Iris Flower Classification #
+![](Images/2.jpg)
+
 ## Table of Content ##
 - [Overview](#overview) 
 - [Motivation](#motivation) 
