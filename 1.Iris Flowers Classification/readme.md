@@ -112,11 +112,19 @@ sns.relplot(x = 'PetalLengthCm', y = 'PetalWidthCm', data = df, hue = 'Species',
 #### Let's understand how the null values are already cleared and also visualize using the heatmap
 ```python
 # TODO : Checking the null values into the data features
+sns.heatmap(df.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 ```
 ![](Images/7.JPG)
 
-** #### There is no null values into the dataset **
+**There is no null values into the dataset 
 
+#### Here we count the each speices values using Boxplot
+```python
+# TODO : Checking the number of the each species values into the Iris dataset
+sns.set_style('whitegrid')
+sns.countplot(x='Species',data=df)
+```
+![](Images/3.JPG)
 
 ## Model Fitting 
 
