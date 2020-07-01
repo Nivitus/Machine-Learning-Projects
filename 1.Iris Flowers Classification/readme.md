@@ -92,6 +92,7 @@ In statistics, exploratory data analysis (EDA) is an approach to analyzing data 
 cor = df.drop("Species", axis=1).corr()
 sns.heatmap(data=cor,annot = True,cmap="YlGnBu")
 ```
+<div align="center"><img src="Images/22.jpg"></div>
 
 
 
