@@ -1,19 +1,19 @@
 # Iris Flower Classification #
 ## Table of Content ##
 * #### [Overview](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#overview) ####
-* #### Motivation ####
-* #### Installation ####
-* #### About the Data ####
-* #### Directory Tree Structure ####
-* #### Packages Used ####
-* #### Technologies used ####
-* #### Data Collection ####
-* #### Data Cleaning ####
-* #### Exploratory Data Analysis ####
-* #### Model Fitting ####
-* #### Deployement ####
-* #### Accuray and Score ####
-* #### Team #### 
+* #### [Motivation](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#motivation) ####
+* #### [Installation](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#installation) ####
+* #### [About the Data](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#about-the-data) ####
+* #### [Directory Tree Structure](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#directory-tree-structure) ####
+* #### [Packages Used](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#packages-used) ####
+* #### [Technologies Used](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#technologies-used) ####
+* #### [Data Collection](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#data-collection) ####
+* #### [Data Cleaning](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#data-cleaning) ####
+* #### [Exploratory Data Analysis](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#exploratory-data-analysis) ####
+* #### [Model Fitting](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#model-fitting) ####
+* #### [Deployement](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#deployement) ####
+* #### [Accuracy and Score](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#accuracy-and-score) ####
+* #### [Team](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#team) #### 
 
 ## Overview ##
 This is a simple **Classification** project where we can able to do the classifying the **Iris flowers**. 
