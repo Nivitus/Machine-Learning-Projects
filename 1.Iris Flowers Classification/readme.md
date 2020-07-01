@@ -41,7 +41,7 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 
   ![](Images/12.png)  ![](Images/11.png)      
 
-  ![](Images/13.png)
+  ![](Images/13.png)  ![](Images/15.jpg)
 
 
 
