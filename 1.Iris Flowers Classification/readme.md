@@ -94,6 +94,12 @@ sns.heatmap(data=cor,annot = True,cmap="YlGnBu")
 ```
 ![](Images/22.JPG)
 
+### Next we would Understand the data features in Species Column
+```python
+# TODO : Species data features
+sns.pairplot(df,hue='Species')
+```
+![](Images/6.JPG)
 
 
 ## Model Fitting 
