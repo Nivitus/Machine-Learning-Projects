@@ -86,7 +86,7 @@ just [Click Here](https://towardsdatascience.com/the-art-of-cleaning-your-data-b
 
 In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods.A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task. Here we performed some of the EDA Process to help the audience for visualize the Iris Flower data.
 
-### Letz Understand the correlation concepts between the data features
+#### Letz Understand the correlation concepts between the data features using heatmap
 ```python
 # TODO : Correlation between the data features
 cor = df.drop("Species", axis=1).corr()
@@ -94,12 +94,15 @@ sns.heatmap(data=cor,annot = True,cmap="YlGnBu")
 ```
 ![](Images/22.JPG)
 
-### Next we would Understand the data features in Species Column
+#### Next we would Understand the data features in Species Column using pairplot
 ```python
 # TODO : Species data features
 sns.pairplot(df,hue='Species')
 ```
 ![](Images/6.JPG)
+
+#### Let's understand how the Petal length and Petal width contributes together to classify iris species.
+
 
 
 ## Model Fitting 
