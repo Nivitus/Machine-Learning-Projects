@@ -1,19 +1,19 @@
 # Iris Flower Classification #
 ## Table of Content ##
-* #### [Overview](#overview) ####
-* #### [Motivation](#motivation) ####
-* #### [Installation](#installation) ####
-* #### [About the Data](#about-the-data) ####
-* #### [Directory Tree Structure](#directory-tree-structure) ####
-* #### [Packages Used](#packages-used) ####
-* #### [Technologies Used](#technologies-used) ####
-* #### [Data Collection](#data-collection) ####
-* #### [Data Cleaning](#data-cleaning) ####
-* #### [Exploratory Data Analysis](#exploratory-data-analysis) ####
-* #### [Model Fitting](#model-fitting) ####
-* #### [Deployement](#deployement) ####
-* #### [Accuracy and Prediction Score](#accuracy-and-prediction-score) ####
-* #### [Team](#team) #### 
+- #### [Overview](#overview) 
+- #### [Motivation](#motivation) 
+- #### [Installation](#installation) 
+- #### [About the Data](#about-the-data) 
+- #### [Directory Tree Structure](#directory-tree-structure) 
+- #### [Packages Used](#packages-used) 
+- #### [Technologies Used](#technologies-used) 
+- #### [Data Collection](#data-collection)
+- #### [Data Cleaning](#data-cleaning) 
+- #### [Exploratory Data Analysis](#exploratory-data-analysis) 
+- #### [Model Fitting](#model-fitting) 
+- #### [Accuracy and Prediction Score](#accuracy-and-prediction-score)
+- #### [Deployement](#deployement)  
+- #### [Team](#team) 
 
 ## Overview ##
 This is a simple **Classification** project where we can able to do the classifying the **Iris flowers**. 
@@ -58,9 +58,9 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 
 ## Model Fitting ##
 
-## Deployement ##
-
 ## Accuracy and Prediction Score ##
+
+## Deployement ##
 
 ## Team ##
 
