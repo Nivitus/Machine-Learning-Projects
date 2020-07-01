@@ -1,19 +1,19 @@
 # Iris Flower Classification #
 ## Table of Content ##
 * #### [Overview](#overview) ####
-* #### [Motivation](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#motivation) ####
-* #### [Installation](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#installation) ####
-* #### [About the Data](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#about-the-data) ####
-* #### [Directory Tree Structure](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#directory-tree-structure) ####
-* #### [Packages Used](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#packages-used) ####
-* #### [Technologies Used](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#technologies-used) ####
-* #### [Data Collection](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#data-collection) ####
-* #### [Data Cleaning](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#data-cleaning) ####
-* #### [Exploratory Data Analysis](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#exploratory-data-analysis) ####
-* #### [Model Fitting](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#model-fitting) ####
-* #### [Deployement](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#deployement) ####
-* #### [Accuracy and Score](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#accuracy-and-score) ####
-* #### [Team](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification#team) #### 
+* #### [Motivation](#motivation) ####
+* #### [Installation](#installation) ####
+* #### [About the Data](#about-the-data) ####
+* #### [Directory Tree Structure](#directory-tree-structure) ####
+* #### [Packages Used](#packages-used) ####
+* #### [Technologies Used](#technologies-used) ####
+* #### [Data Collection](#data-collection) ####
+* #### [Data Cleaning](#data-cleaning) ####
+* #### [Exploratory Data Analysis](#exploratory-data-analysis) ####
+* #### [Model Fitting](#model-fitting) ####
+* #### [Deployement](#deployement) ####
+* #### [Accuracy and Prediction Score](#accuracy-and-prediction-score) ####
+* #### [Team](#team) #### 
 
 ## Overview ##
 This is a simple **Classification** project where we can able to do the classifying the **Iris flowers**. 
@@ -50,7 +50,19 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
   
   ![](Images/17.jpg)
 
+## Data Collection ##
 
+## Data Cleaning ##
+
+## Exploratory Data Analysis ##
+
+## Model Fitting ##
+
+## Deployement ##
+
+## Accuracy and Prediction Score ##
+
+## Team ##
 
 
 
