@@ -84,6 +84,18 @@ just [Click Here](https://towardsdatascience.com/the-art-of-cleaning-your-data-b
 
 ## Exploratory Data Analysis 
 
+In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods.A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task. Here we performed some of the EDA Process to help the audience for visualize the Iris Flower data.
+
+### Letz Understand the correlation concepts between the data features
+```python
+# TODO : Correlation between the data features
+cor = df.drop("Species", axis=1).corr()
+sns.heatmap(data=cor,annot = True,cmap="YlGnBu")
+```
+
+
+
+
 ## Model Fitting 
 
 ## Accuracy and Prediction Score 
