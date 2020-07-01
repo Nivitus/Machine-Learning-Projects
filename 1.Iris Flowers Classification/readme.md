@@ -102,7 +102,20 @@ sns.pairplot(df,hue='Species')
 ![](Images/6.JPG)
 
 #### Let's understand how the Petal length and Petal width contributes together to classify iris species.
+```python
+# TODO : Sepal and Petal data features
+sns.relplot(x = 'PetalLengthCm', y = 'PetalWidthCm', data = df, hue = 'Species', aspect =1.5, height = 4)
+```
 
+![](Images/00.JPG)
+
+#### Let's understand how the null values are already cleared and also visualize using the heatmap
+```python
+# TODO : Checking the null values into the data features
+```
+![](Images/7.JPG)
+
+** #### There is no null values into the dataset **
 
 
 ## Model Fitting 
