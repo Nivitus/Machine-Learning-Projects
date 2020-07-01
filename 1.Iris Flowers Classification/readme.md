@@ -12,7 +12,7 @@
 - [Exploratory Data Analysis](#exploratory-data-analysis) 
 - [Model Fitting](#model-fitting) 
 - [Accuracy and Prediction Score](#accuracy-and-prediction-score)
-- [Deployement](#deployement)  
+- [Deployment](#deployment)  
 - [Team](#team) 
 
 ## Overview 
@@ -85,7 +85,7 @@ iris_db = pd.DataFrame.from_records(data = query.fetchall(), columns = columns)
 
 ## Accuracy and Prediction Score 
 
-## Deployement 
+## Deployment 
 
 ## Team 
 
