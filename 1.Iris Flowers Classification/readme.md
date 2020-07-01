@@ -58,7 +58,7 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 * Each iris species consists of 50 samples.
 * The features of iris flower are Sepal Length in cm, Sepal Width in cm, Petal Length in cm and Petal Width in cm.
 * In this Iris dataset in avilable on **[sklearn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)** library.
-### The following code can help to get the Iris dataset from sklearn
+### The following code can help to get the Iris dataset from sklearn 
 
 ```python
 # TODO : Load Iris Dataset
@@ -78,6 +78,9 @@ iris_db = pd.DataFrame.from_records(data = query.fetchall(), columns = columns)
 ```
 
 ## Data Cleaning 
+
+We need not to cleaning the data for making the machine learning model. Because we were retrive the data from kaggle and sklearn, is already have the format of csv(Comma Separated File) It's already getting clean data. So We don't put the stuffs for data cleaning. If you wanna more about the Art of Data Cleaning Process in Machine Learning 
+just [Click Here](https://towardsdatascience.com/the-art-of-cleaning-your-data-b713dbd49726).
 
 ## Exploratory Data Analysis 
 
