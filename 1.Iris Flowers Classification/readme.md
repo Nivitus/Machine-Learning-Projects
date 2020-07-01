@@ -7,7 +7,12 @@
 * #### Directory Tree Structure ####
 * #### Packages Used ####
 * #### Technologies used ####
+* #### Data Collection ####
+* #### Data Cleaning ####
+* #### Exploratory Data Analysis ####
+* #### Model Fitting ####
 * #### Deployement ####
+* #### Accuray and Score ####
 * #### Team #### 
 
 ## Overview ##
