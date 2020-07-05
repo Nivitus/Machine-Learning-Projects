@@ -508,11 +508,11 @@ weighted avg       0.78      0.80      0.79       123
 
 ![](Images/Niv.JPG)
 
-
+- I hope all of you like this one. I wrote about this project an **Article** or **Blog** on **Medium**. If you wanna read a Blog on **Medium** just [Click Here](https://medium.com/@Nivitus./loan-price-prediction-using-machine-learning-b585aafa3e7) **Thank you so much !!**
 
 
 ## Conclusion
 
 ![](Images/11.JPG)
 
-### From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Logistic Regression performed better than others, Random Forest and Decision Tree. ###
+#### From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Logistic Regression performed better than others, Random Forest and Decision Tree. ####
