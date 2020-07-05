@@ -104,7 +104,7 @@ The major aim of this project is to predict which of the customers will have the
 
 [![Alt Text](Images/16.png)](https://seaborn.pydata.org/)  [![Alt Text](Images/17.jpg)](https://matplotlib.org/)
   
-[![Alt Text](Images/18.png)](https://scikit-learn.org/stable/)
+[![Alt Text](Images/0.JPG)](https://scikit-learn.org/stable/)
 
 
 ## Data Collections
@@ -126,7 +126,7 @@ df.head()
 
 #### Display the dataset in Dataframe
 
-![](Images/12.JPG)
+![](Images/13.JPG)
 
 ## Data Preprocessing
 
