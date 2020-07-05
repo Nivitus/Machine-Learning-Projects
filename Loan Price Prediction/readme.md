@@ -132,8 +132,76 @@ df.head()
 
 When I download the dataset from **[Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset)** I just looked up the dataset after I understand i need to do some of the data preprocessing techniques I must to do. Here I mentioned the Techniques which are really help full for you know about the Art of Data Preprocessing and [Data Cleaning.](https://towardsdatascience.com/the-art-of-cleaning-your-data-b713dbd49726)
 
+- [1.Handling Null / Missing Values.](https://analyticsindiamag.com/5-ways-handle-missing-values-machine-learning-datasets/)
+- [2.Handling the categorical Values.](https://www.pluralsight.com/guides/handling-categorical-data-in-machine-learning-models)
+- [3.Using get_dummies Method (Feature Engineering).](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html)
+
+### Handling Null / Missing Values
+
+Handling the missing values is one of the greatest challenges faced by analysts, because making the right decision on how to handle it.
+Before that we should see on what are the features has contains the null or missing values into the dataset.
+
+``` python
+TODO: # Count the sum of the missing values in each of the features
+
+df.isnull().sum()
+
+Loan_ID               0
+Gender               13
+Married               3
+Dependents           15
+Education             0
+Self_Employed        32
+ApplicantIncome       0
+CoapplicantIncome     0
+LoanAmount           22
+Loan_Amount_Term     14
+Credit_History       50
+Property_Area         0
+Loan_Status           0
+dtype: int64
+```
+
+### Here we can able to see the null or missing values in visual format using heatmap
+
+![](Images/2.JPG)
+
+#### Here I think almost six features have missing values. That’s ok, don’t panic let’s we’ll see about how to fill up the null or missing values in this dataset.
+
+### Handling the Null / Missing Values in Numerical Values
+
+``` python
+TODO: # Using fillna methods to fillup the maean of the features
+
+df['LoanAmount'] = df['LoanAmount'].fillna(df['LoanAmount'].mean())
+df['Loan_Amount_Term'] = df['Loan_Amount_Term'].fillna(df['Loan_Amount_Term'].mean())
+df['Credit_History'] = df['Credit_History'].fillna(df['Credit_History'].mean())
+```
+
+``` python
+TODO: Count the sum of the missing values in each of the features
+df.isnull().sum()
+
+Loan_ID               0
+Gender               13
+Married               3
+Dependents           15
+Education             0
+Self_Employed        32
+ApplicantIncome       0
+CoapplicantIncome     0
+LoanAmount            0
+Loan_Amount_Term      0
+Credit_History        0
+Property_Area         0
+Loan_Status           0
+dtype: int64
+```
+
+
 
 ## Exploratory Data Analysis
+
 
 
 ## Feature Observation
