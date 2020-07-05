@@ -220,6 +220,6 @@ print("Accuracy Score:",svm.score(X_test,y_test) * 100)
 ![](Images/Niv.JPG)
 
 
-
+[![Alt Text](Images/12.png)](https://numpy.org/doc/)
 
 
