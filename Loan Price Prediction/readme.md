@@ -12,7 +12,7 @@
 - [Packages Used](#packages-used)
 - [Data Collections](#data-collections)
 - [Data Preprocessing](#data-preprocessing)
-- [Exploratory Data Analysis(EDA)](#exploratory-data-analysis(eda))
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Feature Observation](#feature-observation)
 - [Model Building](#model-building)
 - [Model Performances](#model-performances)
@@ -31,7 +31,7 @@
 ## About the Dataset
 
 
-## About the Algorithms used in
+## About the Algorithms used in this Project
 
 
 ## Directory Tree Structure
@@ -49,7 +49,7 @@
 ## Data Preprocessing
 
 
-## Exploratory Data Analysis(EDA)
+## Exploratory Data Analysis
 
 
 ## Feature Observation
