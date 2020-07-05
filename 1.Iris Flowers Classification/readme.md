@@ -213,6 +213,7 @@ print("Accuracy Score:",svm.score(X_test,y_test) * 100)
 
 [<img target="_blank" src="https://img.icons8.com/bubbles/100/000000/linkedin.png">](https://www.linkedin.com/in/nivitus-fernandez-999a6815b/)
 
+[<img target="_blank" src="https://img.icons8.com/cotton/256/000000/instagram-new.png">](https://www.instagram.com/nivitus_fernandez/)
 
 ## Team
 
