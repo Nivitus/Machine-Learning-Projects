@@ -515,4 +515,4 @@ weighted avg       0.78      0.80      0.79       123
 
 ![](Images/11.JPG)
 
-From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Logistic Regression performed better than others, Random Forest and Decision Tree.
+### From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Logistic Regression performed better than others, Random Forest and Decision Tree. ###
