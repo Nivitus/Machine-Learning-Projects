@@ -96,15 +96,15 @@ The major aim of this project is to predict which of the customers will have the
 
 ## Technologies Used
 
-[![Alt Text](Images/10.JPG)](https://www.python.org/)
+[![Alt Text](Images/19.JPG)](https://www.python.org/)
 
 ## Packages Used
 
-[![Alt Text](Images/12.png)](https://numpy.org/doc/)  [![Alt Text](Images/11.png)](https://pandas.pydata.org/)    
+[![Alt Text](Images/14.png)](https://numpy.org/doc/)  [![Alt Text](Images/15.png)](https://pandas.pydata.org/)    
 
-[![Alt Text](Images/13.png)](https://seaborn.pydata.org/)  [![Alt Text](Images/15.jpg)](https://matplotlib.org/)
+[![Alt Text](Images/16.png)](https://seaborn.pydata.org/)  [![Alt Text](Images/17.jpg)](https://matplotlib.org/)
   
-[![Alt Text](Images/sk.JPG)](https://scikit-learn.org/stable/)
+[![Alt Text](Images/18.png)](https://scikit-learn.org/stable/)
 
 
 ## Data Collections
