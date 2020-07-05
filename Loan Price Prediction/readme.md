@@ -508,7 +508,7 @@ weighted avg       0.78      0.80      0.79       123
 
 ![](Images/Niv.JPG)
 
-- I hope all of you like this one. I wrote about this project an **Article** or **Blog** on **Medium**. If you wanna read a Blog on **Medium** just [Click Here](https://medium.com/@Nivitus./loan-price-prediction-using-machine-learning-b585aafa3e7) **Thank you so much !!**
+### I hope all of you like this one. I wrote about this project an **Article** or **Blog** on **Medium**. If you wanna read a Blog on **Medium** just [Click Here](https://medium.com/@Nivitus./loan-price-prediction-using-machine-learning-b585aafa3e7) **Thank you so much !!** ###
 
 
 ## Conclusion
