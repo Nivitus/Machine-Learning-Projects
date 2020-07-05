@@ -44,11 +44,11 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 
 ## Packages Used 
 
-  ![](Images/12.png)  ![](Images/11.png)      
+  [![Alt Text](Images/12.png)](https://numpy.org/doc/)  [![Alt Text](Images/11.png)](https://pandas.pydata.org/)    
 
-  ![](Images/13.png)  ![](Images/15.jpg)
+  [![Alt Text](Images/13.png)](https://seaborn.pydata.org/)  [![Alt Text](Images/15.png)](https://matplotlib.org/3.2.2/contents.html)
   
-  ![](Images/sk.JPG)
+  [![Alt Text](Images/sk.JPG)](https://scikit-learn.org/stable/)
 
 ## Data Collection 
 
@@ -211,15 +211,12 @@ print("Accuracy Score:",svm.score(X_test,y_test) * 100)
 
 ## Deployment 
 
-[<img target="_blank" src="https://img.icons8.com/bubbles/100/000000/linkedin.png">](https://www.linkedin.com/in/nivitus-fernandez-999a6815b/)
-
-[<img target="_blank" src="https://img.icons8.com/cotton/256/000000/instagram-new.png">](https://www.instagram.com/nivitus_fernandez/)
 
 ## Team
 
 ![](Images/Niv.JPG)
 
 
-[![Alt Text](Images/12.png)](https://numpy.org/doc/)
+
 
 
