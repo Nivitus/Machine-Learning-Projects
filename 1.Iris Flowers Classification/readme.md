@@ -211,6 +211,8 @@ print("Accuracy Score:",svm.score(X_test,y_test) * 100)
 
 ## Deployment 
 
+[<img target="_blank" src="https://img.icons8.com/bubbles/100/000000/linkedin.png">](https://www.linkedin.com/in/rowhitswami/)
+
 ## Team
 
 ![](Images/Niv.JPG)
