@@ -276,6 +276,8 @@ memory usage: 34.3+ KB
 
 In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task. 
 
+![](Images/9.JPG)
+
 ## Feature Observation
 
 In machine learning and pattern recognition, a feature is an individual measurable property or characteristic of a phenomenon being observed. Choosing informative, discriminating and independent features is a crucial step for effective algorithms in pattern recognition, classification and regression
@@ -325,12 +327,179 @@ df['ApplicantIncome'].hist(bins=30,color='darkblue',alpha=0.3)
 
 ## Model Building
 
+As we seen about the model building we are going to do implement the model with the help of three various kinds of Machine learning classification algorithms. 
+OK let’s watch it …
+
+#### Assigning the X and y values ####
+
+``` python
+TODO: # Allocating the Values before model building
+
+X = df.iloc[0:].values
+y = Y.values
+```
+#### For X Values
+
+``` python
+array([[5.84900000e+03, 0.00000000e+00, 1.46412162e+02, ...,
+        0.00000000e+00, 0.00000000e+00, 1.00000000e+00],
+       [4.58300000e+03, 1.50800000e+03, 1.28000000e+02, ...,
+        0.00000000e+00, 0.00000000e+00, 0.00000000e+00],
+       [3.00000000e+03, 0.00000000e+00, 6.60000000e+01, ...,
+        0.00000000e+00, 0.00000000e+00, 1.00000000e+00],
+       ...,
+       [8.07200000e+03, 2.40000000e+02, 2.53000000e+02, ...,
+        0.00000000e+00, 0.00000000e+00, 1.00000000e+00],
+       [7.58300000e+03, 0.00000000e+00, 1.87000000e+02, ...,
+        0.00000000e+00, 0.00000000e+00, 1.00000000e+00],
+       [4.58300000e+03, 0.00000000e+00, 1.33000000e+02, ...,
+        0.00000000e+00, 1.00000000e+00, 0.00000000e+00]])
+```
+
+#### For y values
+
+``` python
+array(['Y', 'N', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'Y', 'N', 'Y', 'Y', 'Y',
+       'N', 'Y', 'Y', 'Y', 'N', 'N', 'Y', 'N', 'Y', 'N', 'N', 'N', 'Y',
+       'Y', 'Y', 'N', 'Y', 'N', 'N', 'N', 'Y', 'N', 'Y', 'N', 'Y', 'Y',
+       'Y', 'N', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'Y', 'Y', 'Y',
+       'N', 'N', 'N', 'Y', 'Y', 'N', 'Y', 'Y', 'Y', 'Y', 'N', 'N', 'N',
+       'N', 'N', 'Y', 'Y', 'N', 'Y', 'Y', 'Y', 'N', 'Y', 'N', 'N', 'N',
+       'N', 'Y', 'Y', 'Y', 'N', 'N', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y',
+       'Y', 'Y', 'Y', 'Y', 'N', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y',
+       'Y', 'Y', 'Y', 'N', 'N', 'Y', 'Y', 'Y', 'N', 'Y', 'Y', 'Y', 'Y',
+       'Y', 'N', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N',
+```
+### Train Test Split ###
+
+``` python
+TODO: # Spliting the Data for Model Building
+
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.20,random_state=0)
+```       
 
 ## Model Performances
 
+### Logistic Regression ###
+
+``` python
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix,accuracy_score,classification_report
+model_l = LogisticRegression()
+model_l.fit(X_train,y_train)
+
+y_pred = model_l.predict(X_test)
+
+model_l.score(X_test,y_test)
+
+0.8373983739837398
+```
+
+```
+print("Confusion Matix : \n", confusion_matrix(y_test,y_pred))
+print("\n")
+print("Accuracy :",accuracy_score(y_test,y_pred) * 100)
+print("\n")
+print("Report :", classification_report(y_test,y_pred))
+
+Confusion Matix : 
+ [[15 18]
+ [ 2 88]]
+
+
+Accuracy : 83.73983739837398
+
+
+Report :               precision    recall  f1-score   support
+
+           N       0.88      0.45      0.60        33
+           Y       0.83      0.98      0.90        90
+
+    accuracy                           0.84       123
+   macro avg       0.86      0.72      0.75       123
+weighted avg       0.84      0.84      0.82       123
+```
+
+### Decision Tree ###
+
+``` python
+
+from sklearn.tree import DecisionTreeClassifier,export_graphviz
+from sklearn.metrics import confusion_matrix,accuracy_score,classification_report
+from io import StringIO
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+
+model = DecisionTreeClassifier(criterion="entropy",random_state=100,max_depth=4,min_samples_leaf=5)
+model.fit(X_train,y_train)
+y_pred = model.predict(X_test)
+```
+
+``` python
+print("Confusion Matix : \n", confusion_matrix(y_test,y_pred))
+print("\n")
+print("Accuracy :",accuracy_score(y_test,y_pred) * 100)
+print("\n")
+print("Report :", classification_report(y_test,y_pred))
+
+Confusion Matix : 
+ [[14 19]
+ [ 2 88]]
+
+
+Accuracy : 82.92682926829268
+
+
+Report :               precision    recall  f1-score   support
+
+           N       0.88      0.42      0.57        33
+           Y       0.82      0.98      0.89        90
+
+    accuracy                           0.83       123
+   macro avg       0.85      0.70      0.73       123
+weighted avg       0.84      0.83      0.81       123
+```
+
+### Random Forest ###
+
+``` python
+model = RandomForestClassifier(max_depth=None,n_estimators=100) 
+model.fit(X_train,y_train)
+y_pred = model.predict(X_test)
+print("Confusion Matix : \n", confusion_matrix(y_test,y_pred))
+print("\n")
+print("Accuracy :",accuracy_score(y_test,y_pred) * 100)
+print("\n")
+print("Report :", classification_report(y_test,y_pred))
+```
+
+``` python
+Confusion Matix : 
+ [[16 17]
+ [ 8 82]]
+
+
+Accuracy : 79.67479674796748
+
+
+Report :               precision    recall  f1-score   support
+
+           N       0.67      0.48      0.56        33
+           Y       0.83      0.91      0.87        90
+
+    accuracy                           0.80       123
+   macro avg       0.75      0.70      0.71       123
+weighted avg       0.78      0.80      0.79       123
+```
 
 ## Prediction and Final Score
 
+#### Finally we made it the problem, and every algorithm got unique kinds of accuracy score and may it different approaches for scalable model. ####
+
+### Logistic Regression: 83.7 % ###
+### Decision Tree: 82.9 % ###
+### Random Forest: 81.3 % ###
 
 ## Deployment
 
@@ -338,4 +507,10 @@ df['ApplicantIncome'].hist(bins=30,color='darkblue',alpha=0.3)
 ## Team
 
 
+
+
 ## Conclusion
+
+![](Images/11.JPG)
+
+From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Logistic Regression performed better than others, Random Forest and Decision Tree.
