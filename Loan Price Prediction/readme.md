@@ -269,14 +269,58 @@ memory usage: 34.3+ KB
 
 ```
 
-**Note this point the one Categorical value (Loan_Status) it’s our dependent feature so there is no need for converting into numerical value.
-**Here there are no missing or null values. Our dataset is ready for model building. Hurray!!! .
+**Note this point the one Categorical value (Loan_Status) it’s our dependent feature so there is no need for converting into numerical value.**
+**Here there are no missing or null values. Our dataset is ready for model building. Hurray!!! .**
 
 ## Exploratory Data Analysis
 
-
+In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task. 
 
 ## Feature Observation
+
+In machine learning and pattern recognition, a feature is an individual measurable property or characteristic of a phenomenon being observed. Choosing informative, discriminating and independent features is a crucial step for effective algorithms in pattern recognition, classification and regression
+
+### First we understand the correlation between the data features ###
+
+``` python
+TODO: # Using Heatmap
+
+sns.heatmap(df.corr())
+```
+![](Images/4.JPG)
+
+### Lets understand loan allocation based on Gender features in the dataset ###
+
+``` python
+TODO: # Using Countplot
+
+sns.set_style('whitegrid')
+sns.countplot(x='Male',data=df)
+```
+![](Images/5.JPG)
+
+### Let’s understand loan allocation based on Education features in the dataset ###
+
+``` python
+TODO: # Using Countplot
+sns.set_style('whitegrid')
+sns.countplot(x='Not Graduate',data=df)
+```
+![](Images/6.JPG)
+
+### Let’s understand Loan amount status ###
+
+``` python
+df['LoanAmount'].hist(bins=30,color='darkblue',alpha=0.3)
+```
+![](Images/7.JPG)
+
+### Let’s understand Loan amount and number of the frequency is it. ###
+
+``` python
+df['ApplicantIncome'].hist(bins=30,color='darkblue',alpha=0.3)
+```
+![](Images/10.JPG)
 
 
 ## Model Building
