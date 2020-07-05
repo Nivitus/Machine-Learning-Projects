@@ -211,9 +211,6 @@ print("Accuracy Score:",svm.score(X_test,y_test) * 100)
 
 ## Deployment 
 
-[<img target="_blank" src="https://keras.io/img/logo.png" width=200>]
-
-
 ## Team
 
 ![](Images/Niv.JPG)
