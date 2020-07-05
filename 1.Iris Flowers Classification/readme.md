@@ -12,6 +12,7 @@
 - [Exploratory Data Analysis](#exploratory-data-analysis) 
 - [Model Fitting](#model-fitting) 
 - [Accuracy and Prediction Score](#accuracy-and-prediction-score)
+- [Output For Prediction](#output-for-prediction)
 - [Deployment](#deployment)  
 - [Team](#team) 
 
@@ -208,6 +209,10 @@ array(['Iris-virginica'], dtype=object)
 print("Accuracy Score:",svm.score(X_test,y_test) * 100)
 ```
 ### Accuracy Score: 97.77777777777777
+
+## Output For Prediction
+
+
 
 ## Deployment 
 
