@@ -197,8 +197,80 @@ Property_Area         0
 Loan_Status           0
 dtype: int64
 ```
+#### Here I used mean value for fill up the null or missing values of each feature itself.
 
+### Handling the categorical Values
 
+**Categorical Data** is the data that generally takes a limited number of possible values. Also, the data in the category need not be numerical; it can be textual in nature. All machine learning models are some kind of mathematical model that needs numbers to work with.
+
+``` python
+TODO: # Converting the numerical values from categorical values using get_dummies
+
+Gender = pd.get_dummies(df['Gender'],drop_first=True)
+Dependents = pd.get_dummies(df['Dependents'],drop_first=True)
+Self_Employed = pd.get_dummies(df['Self_Employed'],drop_first=True)
+```
+
+Here we handling the categorical values using [get_dummies()](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html). So after fill up all the missing or null values the dataset is ready for making model. And also we handled the all of the categorical value into numerical values.
+
+``` python
+df.isnull().sum()
+
+ApplicantIncome      0
+CoapplicantIncome    0
+LoanAmount           0
+Loan_Amount_Term     0
+Credit_History       0
+Male                 0
+1                    0
+2                    0
+3+                   0
+Yes                  0
+Yes                  0
+Not Graduate         0
+Semiurban            0
+Urban                0
+Loan_Status          0
+dtype: int64
+```
+### After cleaning the all of the null or missing values the dataset will look like into the visual format
+
+``` python
+TODO: # Visualizing the plot
+sns.heatmap(df.isnull(),yticklabels=False,cbar=False,cmap='YlGnBu')
+```
+![](Images/3.JPG)
+
+### After converting all the categorical values our dataset information look like
+
+``` python
+df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 614 entries, 0 to 613
+Data columns (total 15 columns):
+ApplicantIncome      614 non-null int64
+CoapplicantIncome    614 non-null float64
+LoanAmount           614 non-null float64
+Loan_Amount_Term     614 non-null float64
+Credit_History       614 non-null float64
+Loan_Status          614 non-null object
+Male                 614 non-null uint8
+1                    614 non-null uint8
+2                    614 non-null uint8
+3+                   614 non-null uint8
+Yes                  614 non-null uint8
+Yes                  614 non-null uint8
+Not Graduate         614 non-null uint8
+Semiurban            614 non-null uint8
+Urban                614 non-null uint8
+dtypes: float64(4), int64(1), object(1), uint8(9)
+memory usage: 34.3+ KB
+
+```
+
+**Note this point the one Categorical value (Loan_Status) it’s our dependent feature so there is no need for converting into numerical value.
+**Here there are no missing or null values. Our dataset is ready for model building. Hurray!!! .
 
 ## Exploratory Data Analysis
 
