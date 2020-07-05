@@ -506,6 +506,8 @@ weighted avg       0.78      0.80      0.79       123
 
 ## Team
 
+![](Images/Niv.JPG)
+
 
 
 
