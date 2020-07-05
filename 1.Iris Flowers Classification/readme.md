@@ -158,6 +158,57 @@ pred = svm.predict(X_test)
 
 ## Accuracy and Prediction Score 
 
+#### Using Confusion Matrix for Classification prediction
+
+``` python
+from sklearn.metrics import classification_report,confusion_matrix
+print(confusion_matrix(y_test,pred))
+```
+#### Confusion Matrix Result
+``` python 
+[[16  0  0]
+ [ 0 17  1]
+ [ 0  0 11]]
+ 
+ ```
+ #### Using Classification Reports for prediction 
+ 
+ ``` python
+ print(classification_report(y_test,pred))
+ ```
+ 
+ #### Classification Report Results
+ ``` python
+                  precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00        16
+Iris-versicolor       1.00      0.94      0.97        18
+ Iris-virginica       0.92      1.00      0.96        11
+
+       accuracy                           0.98        45
+      macro avg       0.97      0.98      0.98        45
+   weighted avg       0.98      0.98      0.98        45
+
+```
+#### Making Sample Prediction
+
+``` python
+svm.predict([[5.3,3.4,2.7,3.9]])
+```
+
+#### Output for Sample Prediction
+
+``` python
+array(['Iris-virginica'], dtype=object)
+```
+
+### Prediction Score
+
+``` python
+print("Accuracy Score:",svm.score(X_test,y_test) * 100)
+```
+### Accuracy Score: 97.77777777777777
+
 ## Deployment 
 
 ## Team 
