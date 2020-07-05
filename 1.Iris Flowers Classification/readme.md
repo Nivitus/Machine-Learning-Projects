@@ -214,6 +214,9 @@ print("Accuracy Score:",svm.score(X_test,y_test) * 100)
 
 ## Team
 
+![](Images/Nivi.JPG)
+
+
 
 
 
