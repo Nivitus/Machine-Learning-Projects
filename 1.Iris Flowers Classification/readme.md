@@ -127,6 +127,34 @@ sns.countplot(x='Species',data=df)
 ![](Images/3.JPG)
 
 ## Model Fitting 
+``` python
+TODO: Assigning the values for model fitting
+X = df.iloc[:,[1,2,3,4]]
+y = df.iloc[:,[-1]]
+
+```
+```python
+# TODO: Train Test Split and Build and Train the model
+
+Since our process involves training and testing, we should split our dataset. It can be executed by the following code.
+
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.3,random_state=0)
+```
+``` python
+TODO: Using SVM Classifier
+
+from sklearn.svm import SVC
+
+svm = SVC()
+
+svm.fit(X_train,y_train)
+
+```
+``` python
+TODO: Prediciting
+pred = svm.predict(X_test)
+```
 
 ## Accuracy and Prediction Score 
 
