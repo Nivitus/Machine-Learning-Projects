@@ -1,4 +1,4 @@
-<p align = "center"><h1><b> ## HOUSE PRICE PREDCTION USING MACHINE LEARNING ALGORITHM </b></h1> </p>
+<p align = "center"><h1><b> HOUSE PRICE PREDCTION USING MACHINE LEARNING ALGORITHM </b></h1> </p>
 [![Alt Text](Images/12.jpg)](https://medium.com/@Nivitus./boston-house-price-prediction-using-machine-learning-ad3750a866cd)
 
 ## Table of Content ##
