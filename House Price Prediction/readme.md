@@ -36,7 +36,7 @@ The Motivation behind it I just wanna know about the house prices in California 
 
 ## Understand the Problem Statement
 
-![](Images/13.PNG)
+![](Images/13.png)
 
 
 
