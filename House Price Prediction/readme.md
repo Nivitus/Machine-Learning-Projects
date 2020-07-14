@@ -487,14 +487,14 @@ plt.show()
 
 ![](Images/Niv.JPG)
 
-### I hope all of you like this one. I wrote about this project an **Article** or **Blog** on **Medium**. If you wanna read a Blog on **Medium** 
-Just **[Click Here](https://medium.com/@Nivitus./boston-house-price-prediction-using-machine-learning-ad3750a866cd)** **Thank you so much !!** ###
+I hope all of you like this one. I wrote about this project an **Article** or **Blog** on **Medium**. If you wanna read a Blog on **Medium** 
+Just **[Click Here](https://medium.com/@Nivitus./boston-house-price-prediction-using-machine-learning-ad3750a866cd)** </br>
+Thank you so much !!
 
 
 ## Conclusion
 
 ![](Images/2.png)
 
-From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Random Forest Regressor performed better than Linear Regression.
-
+From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Random Forest Regressor performed better than Linear Regression.</br>
 I Hope all of You Like this.
