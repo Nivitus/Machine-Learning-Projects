@@ -75,16 +75,42 @@ The major aim of in this project is to predict the house prices based on the fea
 
 ## Technologies Used
 
+[![Alt Text](Images/19.JPG)](https://www.python.org/)
+
+## Packages Used
+
 [![Alt Text](Images/14.png)](https://numpy.org/doc/)  [![Alt Text](Images/15.png)](https://pandas.pydata.org/)    
 
 [![Alt Text](Images/16.png)](https://seaborn.pydata.org/)  [![Alt Text](Images/17.jpg)](https://matplotlib.org/)
   
 [![Alt Text](Images/00.JPG)](https://scikit-learn.org/stable/)
 
-
-## Packages Used
-
 ## Data Collections
+
+I got the Dataset from [Kaggle](https://www.kaggle.com/prasadperera/the-boston-housing-dataset). This Dataset consist several features such as Number of Rooms, Crime Rate, and Tax and so on. Let’s know about how to read the dataset into the Jupyter Notebook. You can download the dataset from Kaggle in csv file format.Yup! you wanna get dataset from kaggle just [click here](https://www.kaggle.com/prasadperera/the-boston-housing-dataset)
+
+As well we can also able to get the dataset from the sklearn datasets. Yup! It’s available into the sklearn Dataset just [click here](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html) and get it
+
+### Let’s we see how can we retrieve the dataset from the sklearn dataset.
+
+``` python
+from sklearn.datasets import load_boston
+X, y = load_boston(return_X_y=True)
+```
+
+### Code for collecting data from CSV file into Jupyter Notebook!
+
+``` python
+# Import libraries
+import numpy as np
+import pandas as pd
+# Import the dataset
+df = pd.read_csv(“train.csv”)
+df.head()
+```
+![](Images/20.JPG)
+
+
 
 ## Data Preprocessing
 
