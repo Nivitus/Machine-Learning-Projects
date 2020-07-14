@@ -286,7 +286,7 @@ featureScores
 ```
 
 ``` python
-  Specs	Score
+    Specs	Score
 0	crim	3251.396750
 1	zn	4193.279045
 2	indus	618.607714
@@ -315,17 +315,105 @@ print(featureScores.nlargest(5,’Score’)) #print 5 best features
 6     age  1659.128989
 ```
 
+### Feature Importance
 
+``` python
+import matplotlib.pyplot as plt
+model = ExtraTreesClassifier()
+model.fit(X,y)
+```
 
+``` python
+print(model.feature_importances_) #use inbuilt class feature_importances of tree based classifiers
+```
 
+``` python
+[0.10960589 0.02522698 0.04783801 0.01625897 0.07194743 0.12705093
+ 0.11596732 0.09949377 0.03555492 0.04813079 0.05862294 0.11718846
+ 0.12711358]
+```
 
+``` python
+# Plot graph of feature importances for better visualization
+feat_importances = pd.Series(model.feature_importances_, index=X.columns)
+feat_importances.nlargest(10).plot(kind=’barh’)
+plt.show()
+```
 
-
-
+![](Images/10.png)
 
 ## Model Building
 
+### Linear Regression
+
+``` python
+# Values Assigning
+X = df.iloc[:,0:13]
+y = df.iloc[:,-1]
+```
+
+### Train Test Split
+
+``` python
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.20,random_state=0)
+```
+
+``` python
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+model.fit(X_train,y_train)
+```
+
+### Random Forest Regressor
+
+``` python
+# Values Assigning
+X = df.iloc[:,[-1,5,10,4,9]]
+y = df.iloc[:,[-1]]
+```
+
+### Train Test Split
+
+``` python
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.20,random_state=0)
+```
+
+``` python
+from sklearn.ensemble import RandomForestRegressor
+reg = RandomForestRegressor()
+reg.fit(X_train,y_train)
+```
 ## Model Performances
+
+### Linear Regression
+
+``` python
+y_pred = model.predict(X_train)
+```
+
+``` python
+print("Training Accuracy:",model.score(X_train,y_train)*100)
+print("Testing Accuracy:",model.score(X_test,y_test)*100)
+```
+
+``` python
+from sklearn.metrics import mean_squared_error, r2_score
+print("Model Accuracy:",r2_score(y,model.predict(X))*100)
+```
+
+``` python
+plt.scatter(y_train, y_pred)
+plt.xlabel("Prices")
+plt.ylabel("Predicted prices")
+plt.title("Prices vs Predicted prices")
+plt.show()
+```
+
+
+
+
 
 ## Prediction and Final Score
 
