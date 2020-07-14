@@ -206,7 +206,54 @@ sns.heatmap(corr, cbar=False, square= True, fmt=’.2%’, annot=True, cmap=’G
 
 ![](Images/11.png)
 
+``` python
+# Checking the null values using heatmap
+# There is any null values are occupyed here
+sns.heatmap(df.isnull(),yticklabels=False,cbar=False,cmap=’viridis’)
+```
 
+![](Images/3.png)
+
+### Note: There are no null or missing values here.
+
+``` python
+sns.set_style(‘whitegrid’)
+sns.countplot(x=’rad’,data=df)
+```
+
+![](Images/4.png)
+
+``` python
+sns.set_style(‘whitegrid’)
+sns.countplot(x=’chas’,data=df)
+```
+
+![](Images/5.png)
+
+``` python
+sns.set_style(‘whitegrid’)
+sns.countplot(x=’chas’,hue=’rad’,data=df,palette=’RdBu_r’)
+```
+
+![](Images/6.png)
+
+``` python
+sns.distplot(df[‘age’].dropna(),kde=False,color=’darkred’,bins=40)
+```
+
+![](Images/7.png)
+
+``` python
+sns.distplot(df[‘crim’].dropna(),kde=False,color=’darkorange’,bins=40)
+```
+
+![](Images/8.png)
+
+``` python
+sns.distplot(df[‘rm’].dropna(),kde=False,color=’darkblue’,bins=40)
+```
+
+![](Images/9.png)
 
 ## Feature Selection
 
