@@ -60,18 +60,27 @@ In this dataset made for predicting the Boston House Price Prediction. Here I ju
 8. DIS weighted distances to five Boston employment centers
 9. RAD index of accessibility to radial highways
 10.TAX full-value property-tax rate per 10,000 USD
-11. PTRATIO pupil-teacher ratio by town
-12. Black 1000(Bk — 0.63)² where Bk is the proportion of blacks by town
-13. LSTAT % lower status of the population
+11.PTRATIO pupil-teacher ratio by town
+12.Black 1000(Bk — 0.63)² where Bk is the proportion of blacks by town
+13.LSTAT % lower status of the population
 ```
-
-
-
 ## About the Algorithms used in this Project
+
+The major aim of in this project is to predict the house prices based on the features using some of the regression techniques and algorithms.
+
+### 1. Linear Regression
+### 2. Random Forest Regressor
 
 ## Directory Tree Structure
 
 ## Technologies Used
+
+[![Alt Text](Images/14.png)](https://numpy.org/doc/)  [![Alt Text](Images/15.png)](https://pandas.pydata.org/)    
+
+[![Alt Text](Images/16.png)](https://seaborn.pydata.org/)  [![Alt Text](Images/17.jpg)](https://matplotlib.org/)
+  
+[![Alt Text](Images/00.JPG)](https://scikit-learn.org/stable/)
+
 
 ## Packages Used
 
