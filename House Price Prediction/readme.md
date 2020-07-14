@@ -257,6 +257,72 @@ sns.distplot(df[‘rm’].dropna(),kde=False,color=’darkblue’,bins=40)
 
 ## Feature Selection
 
+Feature Selection is the process where you automatically or manually select those features which contribute most to your prediction variable or output in which you are interested in. Having irrelevant features in your data can decrease the accuracy of the models and make your model learn based on irrelevant features.
+
+``` python
+# Lets try to understand which are important feature for this dataset
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
+X = df.iloc[:,0:13] #independent columns
+y = df.iloc[:,-1] #target column i.e price range
+```
+
+Note: If we want to identify the best features for the target variables. We should make sure that the target variable should be int Values. That’s why I convert into the int value from the floating point value
+
+``` python
+y = np.round(df[‘Price’])
+```
+
+``` python
+#Apply SelectKBest class to extract top 5 best features
+bestfeatures = SelectKBest(score_func=chi2, k=5)
+fit = bestfeatures.fit(X,y)
+dfscores = pd.DataFrame(fit.scores_)
+dfcolumns = pd.DataFrame(X.columns)
+# Concat two dataframes for better visualization
+featureScores = pd.concat([dfcolumns,dfscores],axis=1)
+featureScores.columns = [‘Specs’,’Score’] #naming the dataframe columns
+featureScores
+```
+
+``` python
+  Specs	Score
+0	crim	3251.396750
+1	zn	4193.279045
+2	indus	618.607714
+3	chas	49.220803
+4	nox	3.292260
+5	rm	14.620403
+6	age	1659.128989
+7	dis	106.642659
+8	rad	879.520751
+9	tax	9441.032032
+10 ptratio	30.474467
+11	black	2440.426651
+12	lstat	972.176726
+```
+
+``` python
+print(featureScores.nlargest(5,’Score’)) #print 5 best features
+```
+
+``` python
+      Specs        Score
+9     tax  9441.032032
+1      zn  4193.279045
+0    crim  3251.396750
+11  black  2440.426651
+6     age  1659.128989
+```
+
+
+
+
+
+
+
+
+
 ## Model Building
 
 ## Model Performances
