@@ -149,11 +149,64 @@ df.rename(columns={‘medv’:’Price’},inplace=True)
 
 ![](Images/21.JPG)
 
-
 ## Exploratory Data Analysis
 
+In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task.
+
+``` python 
+# Information about the dataset features
+df.info()
+```
+
+``` python
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 333 entries, 0 to 332
+Data columns (total 15 columns):
+ID         333 non-null int64
+crim       333 non-null float64
+zn         333 non-null float64
+indus      333 non-null float64
+chas       333 non-null int64
+nox        333 non-null float64
+rm         333 non-null float64
+age        333 non-null float64
+dis        333 non-null float64
+rad        333 non-null int64
+tax        333 non-null int64
+ptratio    333 non-null float64
+black      333 non-null float64
+lstat      333 non-null float64
+Price      333 non-null float64
+dtypes: float64(11), int64(4)
+memory usage: 39.1 KB
+```
+
+``` python
+# Describe
+df.describe()
+```
+
+![](Images/23.JPG)
 
 ## Feature Observation
+
+``` python
+# Finding out the correlation between the features
+corr = df.corr()
+corr.shape
+```
+
+### First Understanding the correlation of features between target and other features
+
+``` python
+# Plotting the heatmap of correlation between features
+plt.figure(figsize=(14,14))
+sns.heatmap(corr, cbar=False, square= True, fmt=’.2%’, annot=True, cmap=’Greens’)
+```
+
+![](Images/11.png)
+
+
 
 ## Feature Selection
 
