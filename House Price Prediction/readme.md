@@ -398,10 +398,15 @@ print("Training Accuracy:",model.score(X_train,y_train)*100)
 print("Testing Accuracy:",model.score(X_test,y_test)*100)
 ```
 
+Training Accuracy: 72.93455672581774
+Testing Accuracy: 73.12411054098592
+
 ``` python
 from sklearn.metrics import mean_squared_error, r2_score
 print("Model Accuracy:",r2_score(y,model.predict(X))*100)
 ```
+
+Model Accuracy: 72.99823346258346
 
 ``` python
 plt.scatter(y_train, y_pred)
@@ -409,6 +414,37 @@ plt.xlabel("Prices")
 plt.ylabel("Predicted prices")
 plt.title("Prices vs Predicted prices")
 plt.show()
+```
+
+![](Images/30.png)
+
+``` python
+# Checking residuals
+plt.scatter(y_pred,y_train-y_pred)
+plt.title("Predicted vs residuals")
+plt.xlabel("Predicted")
+plt.ylabel("Residuals")
+plt.show()
+```
+
+![](Images/31.png)
+
+``` python
+# Checking Normality of errors
+sns.distplot(y_train-y_pred)
+plt.title("Histogram of Residuals")
+plt.xlabel("Residuals")
+plt.ylabel("Frequency")
+plt.show()
+```
+
+![](Images/32.png)
+
+### Random Forest Regressor
+
+``` python
+y_pred = reg.predict(X_train)
+print("Training Accuracy:",reg.score(X_train,y_train)*100)
 ```
 
 
