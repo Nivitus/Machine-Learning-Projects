@@ -466,12 +466,31 @@ plt.show()
 
 ![](Images/33.png)
 
-
-
 ## Prediction and Final Score
+
+### Finally We Made it!!! </br>
+ 
+#### Linear Regression </br>
+
+- Model Score: 73.1% Accuracy </br>
+- Tarining Accuracy: 72.9% Accuracy </br>
+- Testing Accuracy: 73.1% Accuracy
+
+### Random Forest Regressor </br>
+
+- Tarining Accuracy: 99.9% Accuracy </br>
+- Testing Accuracy: 99.8% Accuracy
 
 ## Deployment
 
 ## Team
 
+
+
 ## Conclusion
+
+![](Images/2.PNG)
+
+From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Random Forest Regressor performed better than Linear Regression.
+
+I Hope all of You Like this.
