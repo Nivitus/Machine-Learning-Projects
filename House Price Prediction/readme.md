@@ -110,11 +110,48 @@ df.head()
 ```
 ![](Images/20.JPG)
 
-
-
 ## Data Preprocessing
 
+In this Boston Dataset we need not to clean the data. The dataset already cleaned when we download from the Kaggle. For your satisfaction i will show to number of null or missing values in the dataset. As well as we need to understand shape of the dataset.
+
+``` python
+# Shape of dataset
+print(“Shape of Training dataset:”, df.shape)
+Shape of Training dataset: (333, 15)
+# Checking null values for training dataset
+df.isnull().sum()
+```
+``` python
+ID         0
+crim       0
+zn         0
+indus      0
+chas       0
+nox        0
+rm         0
+age        0
+dis        0
+rad        0
+tax        0
+ptratio    0
+black      0
+lstat      0
+medv       0
+dtype: int64
+```
+Note: The target variable is the last one which is called medv. So we can’t able to get confusion so I just rename the feature name medv into Price.
+
+``` python
+# Here lets change ‘medv’ column name to ‘Price’
+df.rename(columns={‘medv’:’Price’},inplace=True)
+```
+#### Yup! Look that the feature or column name is changed!
+
+![](Images/21.JPG)
+
+
 ## Exploratory Data Analysis
+
 
 ## Feature Observation
 
