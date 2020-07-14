@@ -470,7 +470,7 @@ plt.show()
 
 ### Finally We Made it!!! </br>
  
-#### Linear Regression </br>
+### Linear Regression </br>
 
 - Model Score: 73.1% Accuracy </br>
 - Tarining Accuracy: 72.9% Accuracy </br>
@@ -485,11 +485,15 @@ plt.show()
 
 ## Team
 
+![](Images/Niv.JPG)
+
+### I hope all of you like this one. I wrote about this project an **Article** or **Blog** on **Medium**. If you wanna read a Blog on **Medium** 
+Just **[Click Here](https://medium.com/@Nivitus./boston-house-price-prediction-using-machine-learning-ad3750a866cd)** **Thank you so much !!** ###
 
 
 ## Conclusion
 
-![](Images/2.PNG)
+![](Images/2.png)
 
 From the Exploratory Data Analysis, we could generate insight from the data. How each of the features relates to the target. Also, it can be seen from the evaluation of three models that Random Forest Regressor performed better than Linear Regression.
 
