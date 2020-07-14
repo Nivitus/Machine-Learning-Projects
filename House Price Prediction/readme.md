@@ -398,7 +398,7 @@ print("Training Accuracy:",model.score(X_train,y_train)*100)
 print("Testing Accuracy:",model.score(X_test,y_test)*100)
 ```
 
-Training Accuracy: 72.93455672581774
+Training Accuracy: 72.93455672581774 </br>
 Testing Accuracy: 73.12411054098592
 
 ``` python
@@ -447,7 +447,24 @@ y_pred = reg.predict(X_train)
 print("Training Accuracy:",reg.score(X_train,y_train)*100)
 ```
 
+Training Accuracy: 99.98096708430167
 
+``` python
+print("Testing Accuracy:",reg.score(X_test,y_test)*100)
+```
+
+Testing Accuracy: 99.86879055857058
+
+``` python
+# Visualizing the differences between actual prices and predicted values
+plt.scatter(y_train, y_pred)
+plt.xlabel("Prices")
+plt.ylabel("Predicted prices")
+plt.title("Prices vs Predicted prices")
+plt.show()
+```
+
+![](Images/33.png)
 
 
 
