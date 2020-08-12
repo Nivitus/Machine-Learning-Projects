@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url("./doo.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden; 
+    position: relative;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+.btn {
+    background-color:purple;
+    color: whitesmoke;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+input {
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 35%;
+    height: 5%;
+    background-color: #bfd8ce;
+    color: rgb(44, 11, 9);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    input {
+        width: 100%;
+    }
+}
