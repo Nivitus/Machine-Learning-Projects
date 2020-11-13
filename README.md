@@ -39,7 +39,7 @@ Here I have listed all the projects that I have done and strats from latest proj
 |:-----------|:--------------------------------|:------------:|:-----------:|--------------------------:|----------------------:|---------:|
 | 1.         | Iris Flower Classification | 10-Jul-2020  | 11-Jul-2020 |[Iris Flower Classification](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/1.Iris%20Flowers%20Classification)|[Iris Flower Classification](https://medium.com/@Nivitus./iris-flower-classification-machine-learning-d4e337140fa4)|-|
 | 2.         | Car Price Prediction | 01-Jul-2020  | 07-Jul-2020 |[Car Price Prediction](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/Car%20Price%20Prediction)|[Car Price Prediction](https://medium.com/@Nivitus./car-price-prediction-using-machine-learning-6d7678cdbf94)|-|
-| 3.         | Diabetes Prediction | 27-Jun-2020  | 30-Jun-2020 |[Diabetes Prediction](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/Diabetes%20Prediction)|[Diabetes Prediction](---- In Futer ----)|-|
+| 3.         | Diabetes Prediction | 27-Jun-2020  | 30-Jun-2020 |[Diabetes Prediction](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/Diabetes%20Prediction)|(---- In Futer ----)|-|
 | 2.         | Gender Classification | 18-Jan-2020  | 31-Jan-2020 |[Gender](https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects/tree/master/03.Gender_Classifcation)|-|-|
 | 1.         |  | 12-Jan-2020  | 17-Jan-2020 |[Weight](https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects/tree/master/04.Weight_Prediction)|-|-|
 
