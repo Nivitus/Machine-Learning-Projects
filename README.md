@@ -51,7 +51,8 @@ Here I have listed all the projects that I have done and strats from latest proj
 ## Upcoming Projects
 | Project No |          Project Name           |  Start Date  |   End Date  |           GitHub          |         Blog          | App Link |
 |:-----------|:--------------------------------|:------------:|:-----------:|--------------------------:|----------------------:|---------:|
-| 6.         | Mobile Price Prediction | 15-Jul-2020  | Present |[Mobile Price](#)|[Mobile Price](#)|-|
+| 11.         | Bitcoin Price Predictor  | 05-Oct-2020  | Present |-||-||-|
+| 12.         | Uber Data Analysis | 015-Oct-2020  | Present |-||-||-|
 
 
 ## Technical Aspects
