@@ -72,7 +72,7 @@ To run my app on your local machine, do the following steps.
 > **Step 2** :
    - If you want the current version of my repository to be in your github, you can do forking my repository by clicking as shown in the picture below.
    
-   ![](Images/git.png)
+   ![](Images/git.PNG)
    
    - Clone my repository to your local machine by running the following command. Before doing this, you have to install git on your machine and make sure you are having proper internet connection.
       - For **Windows OS** user, open *git bash* and run the following command.
