@@ -189,7 +189,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Technologies Used
 
-![](Images/all.png)  
+![](Images/all.PNG)  
 
 
 
