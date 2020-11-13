@@ -47,12 +47,13 @@ Here I have listed all the projects that I have done and strats from latest proj
 | 8.         | Mobile Price Prediction | 21-Sep-2020  | 23-Sep-2020 |[Mobile Price Prediction](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/Loan%20Price%20Prediction)|[Mobile Price Prediction](https://medium.com/@Nivitus./mobile-price-prediction-using-machine-learning-fa9cab6fb242)|-|
 | 9.         | Loan Prediction | 27-Sep-2020  | 30-Sep-2020 |[Loan Prediction](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/Loan%20Price%20Prediction)|[Mobile Price Prediction](https://medium.com/@Nivitus./loan-price-prediction-using-machine-learning-b585aafa3e7)|-|
 | 10.         | Beer Consumptio Prediction | 1-Oct-2020  | 2-Oct-2020 |[Beer Consumptio Prediction](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/Beer%20Consumption%20Prediction)|-|-|
+| 11.         | Employee Salary Prediction | 1-Feb-2020  | 4-Feb-2020 |[Employee Salary Prediction](https://github.com/Nivitus/Employee_Salary_Prediction)|-|[Click](https://mysalpre.herokuapp.com/)|
 
 ## Upcoming Projects
 | Project No |          Project Name           |  Start Date  |   End Date  |           GitHub          |         Blog          | App Link |
 |:-----------|:--------------------------------|:------------:|:-----------:|--------------------------:|----------------------:|---------:|
-| 11.         | Bitcoin Price Predictor  | 05-Oct-2020  | Present |-||-||-|
-| 12.         | Uber Data Analysis | 015-Oct-2020  | Present |-||-||-|
+| 12.         | Bitcoin Price Predictor  | 05-Oct-2020  | Present |-||-||-|
+| 13.         | Uber Data Analysis | 015-Oct-2020  | Present |-||-||-|
 
 
 ## Technical Aspects
@@ -76,15 +77,15 @@ To run my app on your local machine, do the following steps.
    - Clone my repository to your local machine by running the following command. Before doing this, you have to install git on your machine and make sure you are having proper internet connection.
       - For **Windows OS** user, open *git bash* and run the following command.
       ```bash
-      git clone https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects.git
+      git clone https://github.com/Nivitus/Machine-Learning-Projects.git
       ```
       
       - For **Linus OS** user, open *Terminal* and run the following command.
       ```bash
-      git clone https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects.git
+      git clone https://github.com/Nivitus/Machine-Learning-Projects.git
       ```
    
-   - If you don't want to mess up with all these things, you can just download the *zip* file of my GitHub repository by clicking [here](https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects/archive/master.zip) and extract it to any file location as your wish and then use it.
+   - If you don't want to mess up with all these things, you can just download the *zip* file of my GitHub repository by clicking [here](https://github.com/Nivitus/Machine-Learning-Projects/archive/master.zip) and extract it to any file location as your wish and then use it.
    - Now we have done with the downloading of my whole project.
 
 > **Step 3** :
@@ -113,23 +114,30 @@ To run my app on your local machine, do the following steps.
 - To view my app, hit the following URL in any of the browser such as Chrome, FireFox, etc..,
    
    ```bash
-   http://127.0.0.1:3000/
+   http://127.0.0.1:5000/
    ```
 
 ## Deployment on Heroku
 - After successfully running my app on your local machine, you can also deploy my app on heroku by following the steps given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python). You have to do it on your own risk.
-- In case, if you have any issues on deploying the app, please open a new issue by clicking [here](https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects/issues/new/choose). Because it may help others while deploying.
+- In case, if you have any issues on deploying the app, please open a new issue by clicking [here](https://github.com/Nivitus/Machine-Learning-Projects/issues/new/choose). Because it may help others while deploying.
 
 ## Directory Tree
 
 
 ```bash
 Machine-Learning-Projects
-├── 01.Iris_Species_Classification
-├── 02.Loan_Status_Prediction
-├── 03.Gender_Classifcation
-├── 04.Weight_Prediction
-├── 05.Boston_House_Price_Prediction
+├── 01.Iris Flower Classification
+├── 02.Car Price Prediction
+├── 03.Diabetes Prediction
+├── 04.Flight Price Prediction
+├── 05.Heart Diseases Prediction
+├── 06.Boston House Price Prediction
+├── 07.IPL Score Prediction
+├── 08.Mobile Price Prediction
+├── 09.Loan Prediction
+├── 10.Beer Consumptio Prediction
+
+
 ├── data
 │   ├── ML_Projects.csv
 │   └── social-media-links.csv
@@ -144,17 +152,19 @@ Machine-Learning-Projects
 │   ├── images
 │   └── js
 ├── templates
-│   ├── base.html
-│   ├── all_projects.html
-│   ├── weight_predictor.html
-│   ├── gender_classifier.html
-│   ├── iris_species_classifier.html
-│   ├── loan_status_predictor.html
-│   └── boston_house_price_predictor.html
+│   ├── index.html
+│   ├── indexx.html
+│   ├── Iris Flower Classification.html	
+│   ├── Car Price Prediction
+│   ├── Diabetes Prediction	
+│   ├── Flight Price Prediction	
+│   ├── Heart Diseases Prediction	
+│   ├── Boston House Price Prediction	
+│   ├── IPL Score Prediction	
+│   ├── Mobile Price Prediction	
+│   ├── Loan Prediction	
+│   ├── Beer Consumptio Prediction	
 ├── LICENSE.txt
-├── ml_projects.py
-├── Procfile
-├── requirements.txt
 ├── runtime.txt
 └── README.md
 ```
@@ -172,9 +182,9 @@ These features will be added in the future :
 
 ## Bug / Feature Request
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects/issues/new) by including your search query and the expected result.
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/Nivitus/Machine-Learning-Projects/issues/new) by including your search query and the expected result.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects/issues/new/choose). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/Nivitus/Machine-Learning-Projects/issues/new/choose). Please include sample queries and their corresponding results.
 
 ## Technologies Used
 
@@ -185,10 +195,10 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## Team
 [<img target="_blank" src="static/images/photos/ask.jpeg" width=200>](https://ashok-machine-learning-project.herokuapp.com/) |
 -|
-[ASHOK KUMAR K](https://ashok-machine-learning-project.herokuapp.com) |)
+[Nivitus](https://nivitus.herokuapp.com) |)
 
 ## License
-   Copyright 2020 ASHOK KUMAR K
+   Copyright 2020 Nivitus
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -204,5 +214,6 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Credits
 1. Kaggle - I have collected dataset from kaggle for some of the projects such as Loan Status Prediction, Iris Species Classification, Boston House Price Prediction, etc..,
+2. Krish Naik -  I have Learned many of the concepts & ideas from his Youtube Channel.
 
 
