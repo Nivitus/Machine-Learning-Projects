@@ -193,7 +193,13 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 [![Alt Text](Images/16.png)](https://seaborn.pydata.org/)  [![Alt Text](Images/17.jpg)](https://matplotlib.org/)
   
-[![Alt Text](Images/00.JPG)](https://scikit-learn.org/stable/)
+[![Alt Text](Images/0.JPG)](https://scikit-learn.org/stable/) [![Alt Text](Images/a.png)](https://scikit-learn.org/stable/) 
+
+[![Alt Text](Images/boo.png)](https://scikit-learn.org/stable/) [![Alt Text](Images/flask.png)](https://scikit-learn.org/stable/) 
+
+[![Alt Text](Images/g.png)](https://scikit-learn.org/stable/) [![Alt Text](Images/hjc.png)](https://scikit-learn.org/stable/) 
+
+[![Alt Text](Images/sci.jpg)](https://scikit-learn.org/stable/)  [![Alt Text](Images/s.png)](https://scikit-learn.org/stable/) 
 
 
 
