@@ -194,7 +194,9 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 
 ## Team
-[![Alt Text](Images/me.jpg)](https://nivitus.herokuapp.com/)
+[<img target="_blank" <img src="https://i.ibb.co/SBbk476/me.jpg" alt="me" border="0"> ](https://nivitus.herokuapp.com/) |
+-|
+[NIVITUS](https://nivitus.herokuapp.com) |)
 
 
 ## License
