@@ -19,11 +19,11 @@
 ## Demo
 - App Link : <a href="https://nivitus.herokuapp.com/" target="_blank">Machine Learning Projects</a>
 
-[![Alt Text](Images/1.PNG)](https://nivitus.herokuapp.com/)
-[![Alt Text](Images/2.PNG)](https://nivitus.herokuapp.com/)
+[![Alt Text](Images/1.PNG)](https://nivitus.herokuapp.com/ target="_blank")
+[![Alt Text](Images/2.PNG)](https://nivitus.herokuapp.com/ target="_blank")
 
 ## Overview
-This [repository](https://github.com/ASHOKKUMAR-K/Machine-Learning-Projects) consists of various machine learning projects in which each projects was done as end to end projects which means from Data Collection through feature engineering, feature selecion to Deployment and Maintainance. The whole app was built with Flask framework. You can launch my app by clicking <a href="https://ashok-machine-learning-project.herokuapp.com/" target="_blank">here</a>.
+In this [repository](https://github.com/Nivitus/Machine-Learning-Projects) consists of various machine learning projects in which each projects was done as end to end projects which means from Data Collection through feature engineering, feature selecion to Deployment and Maintainance. The whole app was built with Flask framework. You can launch my app by clicking <a href="https://nivitus.herokuapp.com/" target="_blank">here</a>.
 
 For building machine learning models, I have used scikit-learn alias sklearn.
 
