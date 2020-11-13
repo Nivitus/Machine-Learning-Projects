@@ -194,9 +194,8 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 
 ## Team
-[<img target="_blank" src="static/images/photos/ask.jpeg" width=200>](https://ashok-machine-learning-project.herokuapp.com/) |
--|
-[Nivitus](https://nivitus.herokuapp.com) |)
+[![Alt Text](Images/me.jpg)](https://nivitus.herokuapp.com/)
+
 
 ## License
    Copyright 2020 Nivitus
