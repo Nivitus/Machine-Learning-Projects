@@ -1,5 +1,5 @@
 certifi==2020.6.20
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 click==7.0
 Flask==1.1.1
 idna==2.8
