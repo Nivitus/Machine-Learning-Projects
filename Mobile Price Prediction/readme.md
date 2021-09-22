@@ -1,11 +1,11 @@
-# Iris Flower Classification #
+# Mobile Price Prediction Using Machine Learning #
 ## Table of Content ##
 - [Overview](#overview) 
 - [Motivation](#motivation) 
-- [Installation](#installation) 
+- [Understand the Problem Statement](#understand-the-problem-statement) 
 - [About the Data](#about-the-data) 
-- [Directory Tree Structure](#directory-tree-structure) 
-- [Technologies Used](#technologies-used) 
+- [About the Web Scrapping](#About-the-Web-Scrapping) 
+- [Algorithms and Technologies Used](#Algorithms-and-Technologies-Used) 
 - [Packages Used](#packages-used)
 - [Data Collection](#data-collection)
 - [Data Cleaning](#data-cleaning) 
