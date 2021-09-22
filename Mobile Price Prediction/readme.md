@@ -45,7 +45,24 @@ dtype=’object’)
 
 ## Data Overview
 
+![Data Overview](Images/Images_1.png)
 
+* Brand me — This is first feature of our dataset. Its Denotes name of the mobile phones and Brands.
+* Ratings — This Feature Denotes Number of the ratings gave by the consumers for each mobile.
+* RAM — It’s have RAM size of the phone.
+* ROM — It’s have ROM (Internal Memory) size of the phone.
+* Mobile_Size — It’s represents how many inches of the particular mobile phone have. Here all the values are gave in inches
+* Primary_Cam — It’s Denotes Number of the pixels of the primary camera (Back Camera) for each mobile.
+* Selfi_Cam — It’s Denotes Number of the pixels of the Selfi camera (Front Camera) for each mobile.
+* Battery_Power — It’s Denotes amount of the battery power in each mobiles in mAh.
+* Price — It’s a Dependent Feature of the dataset. It’s just denoting prices of the each mobile.
+
+## About the Web Scrapping
+
+In this project I wasn’t get the dataset from Kaggle rather than I got an idea about download from mobile websites. So I decided using web scrapping method. So we should understand one thing what is web scrapping? Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites.
+Web scraping software may access the World Wide Web directly using the Hypertext Transfer Protocol, or through a web browser.
+
+![Data Overview](Images/Images_2.png)
 
 
 ## Technologies Used 
