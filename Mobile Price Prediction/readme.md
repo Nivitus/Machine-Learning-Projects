@@ -2,41 +2,51 @@
 ## Table of Content ##
 - [Overview](#overview) 
 - [Motivation](#motivation) 
+- [Installation](#installation)
 - [Understand the Problem Statement](#understand-the-problem-statement) 
 - [About the Data](#about-the-data) 
 - [About the Web Scrapping](#about-the-web-scrapping) 
 - [Algorithms and Technologies Used](#algorithms-and-technologies-used) 
 - [Packages Used](#packages-used)
 - [Data Collection](#data-collection)
-- [Data Cleaning](#data-cleaning) 
+- [Data Preprocessing](#data-preprocessing) 
 - [Exploratory Data Analysis](#exploratory-data-analysis) 
+- [About Data Features](#about-data-features)
 - [Model Fitting](#model-fitting) 
 - [Accuracy and Prediction Score](#accuracy-and-prediction-score)
-- [Deployment](#deployment)  
 - [Team](#team) 
 
 ## Overview 
-This is a simple **Classification** project where we can able to do the classifying the **Iris flowers**. 
-Create the Machine Learning model that can classify the different species of the Iris flower.
+We are going to do implementing a salable model for predicting the mobile price prediction using some of the regression techniques based of some of features in the dataset which is called mobile Price Prediction. There are some of the processing techniques for creating a model. In this project i used web scrapping techniques for collecting the mobile data from E-Commerce website. We will see about it in upcoming parts.
 
 ## Motivation 
-What could be a perfect way to utilize unfortunate lockdown period? Like most of you, I spend my time Gardening, Games, Movies, Coding and read some stories as well as read some of the trending AI Papers through the Google. When i heard about the Iris Flowers Classification i could find my own interset to making this model. So i retrive the dataset form kaggle and making this idea come true.
+The Motivation behind it I just wanna know about the various kinds of mobile prices during the lock down period. Because now a days most of the E-Commerce website are focusing to sell the mobile for consumers.
+
+Because now a days many of the students including me also having the online class rooms for continue our education systems. So I got the idea about to do some of the useful things do in the lock down period. That’s why I decided to doing in this project. As well as one of my brother asked to me “Bro why shouldn’t we do this mobile price prediction from end to end? Like we are not going to do get the data from Kaggle for this project” .So I decided to make in this way.
 
 ## Installation 
 The Code is written in Python 3.7. If you don't have Python installed just [clik here](https://www.python.org/downloads/) and install python on your system. 
 If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, such as numpy, pandas, matplotlib and sklearn.
 
+## Understand the Problem Statement
+Mobile prices are an important reflection of the Humans and some ranges are of great interest for both buyers and sellers. Ask a mobile buyer to describe their dream Mobile or Branded Mobile Phones. So in this blog we are going to see about how the prices are segregated based on the some of the features. As well as the target feature prediction based on the same features.
+
 ## About the Data 
-The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in his 1936 paper the use of multiple measurements in taxonomic problems as an exampleof linear discriminant analysis.His contribution to statistics is way beyond the Fisher's exact test. For example, he developedthe maximum likelihood estimation and the analysis of variance (more commonly known as its acronym ANOVA) test.If you wanna get this data set just [click here](https://www.kaggle.com/arshid/iris-flower-dataset) and you will get it. For these important contributions, he has been highly regarded in the history of modern statistics, as noted on his Wikipedia page.
+In this dataset I wasn’t downloading from Kaggle or any other data collecting websites. I just make or create the dataset using one of the web scrapping tools. I’ll tell about next upcoming part. So a little bit of overview we understand about the data and its features.
 
-![Ronald Fisher](Images/Ronald.jpg)
+``` bash
+# lets understand features of this dataset
+df.columns
+Index([‘Brand me’, ‘Ratings’, ‘RAM’, ‘ROM’, ‘Mobile_Size’, ‘Primary_Cam’,
+‘Selfi_Cam’, ‘Battery_Power’, ‘Price’],
+dtype=’object’)
 
-** This is Ronald Fisher If you Wanna know more about him** Just [click here](https://en.wikipedia.org/wiki/Ronald_Fisher)
+```
 
-## **This can be Explain about the Iris Flower Data Measurements** ##
-![](Images/1.JPG)
+## Data Overview
 
-## Directory Tree Structure 
+
+
 
 ## Technologies Used 
 
