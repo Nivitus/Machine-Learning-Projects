@@ -120,7 +120,25 @@ plt.figure(figsize=(15,10))
 sns.set_style(‘whitegrid’)
 sns.countplot(x=’Primary_Cam’,data=df)
 ```
-![](Images/Images_8.png)
+![](Images/Images_9.png)
+
+## About Data Features
+
+Feature Selection is the process where you automatically or manually select those features which contribute most to your prediction variable or output in which you are interested in. Having irrelevant features in your data can decrease the accuracy of the models and make your model learn based on irrelevant features.
+
+``` bash
+# Fitting Method
+dfscores = pd.DataFrame(fit.scores_)
+dfcolumns = pd.DataFrame(X.columns)
+# Concat two dataframes for better visualization
+featureScores = pd.concat([dfcolumns,dfscores],axis=1)
+featureScores.columns = [‘Specs’,’Score’] #naming the dataframe columns
+featureScores
+```
+![Top Rated Features ](Images/Images_10.png)
+
+![Feature Frequences](Images/Images_11.png)
+
 
 ## Model Fitting 
 ``` python
