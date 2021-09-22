@@ -141,90 +141,72 @@ featureScores
 
 
 ## Model Fitting 
-``` python
-TODO: Assigning the values for model fitting
-X = df.iloc[:,[1,2,3,4]]
-y = df.iloc[:,[-1]]
+### Random Forest 
 
-```
+``` python
+
+# TODO: Assigning the values for model fitting
+
+X = df.iloc[:,[6,2,4,5,1,3]]
+y = df.iloc[:,[-1]]
 ```python
+
 # TODO: Train Test Split and Build and Train the model
 
 Since our process involves training and testing, we should split our dataset. It can be executed by the following code.
 
 from sklearn.model_selection import train_test_split
-X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.3,random_state=0)
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=15)
 ```
 ``` python
-TODO: Using SVM Classifier
-
-from sklearn.svm import SVC
-
-svm = SVC()
-
-svm.fit(X_train,y_train)
-
+TODO: Using Random Forest Regressor
+from sklearn.ensemble import RandomForestRegressor
+reg = RandomForestRegressor()
+reg.fit(X_train,y_train)
 ```
 ``` python
 TODO: Prediciting
-pred = svm.predict(X_test)
+y_pred = reg.predict(X_train)
+```
+
+### Support Vector Machine
+
+``` python
+# TODO: Train Test Split and Build and Train the model
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=15)
+```
+
+``` python
+from sklearn.svm import SVR
+regressor = SVR(kernel = 'rbf')
+regressor.fit(X, y)
+```
+
+``` bash
+TODO: Predict using SVM
+y_pred = reg.predict(X_train)
 ```
 
 ## Accuracy and Prediction Score 
-
-#### Using Confusion Matrix for Classification prediction
-
-``` python
-from sklearn.metrics import classification_report,confusion_matrix
-print(confusion_matrix(y_test,pred))
-```
-#### Confusion Matrix Result
-``` python 
-[[16  0  0]
- [ 0 17  1]
- [ 0  0 11]]
- 
- ```
- #### Using Classification Reports for prediction 
- 
- ``` python
- print(classification_report(y_test,pred))
- ```
- 
- #### Classification Report Results
- ``` python
-                  precision    recall  f1-score   support
-
-    Iris-setosa       1.00      1.00      1.00        16
-Iris-versicolor       1.00      0.94      0.97        18
- Iris-virginica       0.92      1.00      0.96        11
-
-       accuracy                           0.98        45
-      macro avg       0.97      0.98      0.98        45
-   weighted avg       0.98      0.98      0.98        45
-
-```
-#### Making Sample Prediction
+### Random Forest
 
 ``` python
-svm.predict([[5.3,3.4,2.7,3.9]])
+# Training Score
+print("Training Accuracy:",reg.score(X_train,y_train)*100)
+Training Accuracy: 96.2779244902184
 ```
-
-#### Output for Sample Prediction
-
 ``` python
-array(['Iris-virginica'], dtype=object)
+# Testing Score
+print("Testing Accuracy:",reg.score(X_test,y_test)*100)
+Testing Accuracy: 95.33388099982595
 ```
-
-### Prediction Score
-
-``` python
-print("Accuracy Score:",svm.score(X_test,y_test) * 100)
-```
-### Accuracy Score: 97.77777777777777
-
-## Deployment 
-
+### Random Forest Regressor
+#### Tarining Accuracy: 96.2% Accuracy
+#### Testing Accuracy: 95.3% Accuracy
+### Support Vector Regressor
+#### Tarining Accuracy: 96.2% Accuracy
+#### Testing Accuracy: 95.8% Accuracy
 
 ## Team
 
