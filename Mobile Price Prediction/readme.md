@@ -65,93 +65,62 @@ Web scraping software may access the World Wide Web directly using the Hypertext
 ![Data Overview](Images/Images_2.png)
 
 
-## Technologies Used 
+## Algorithms and Technologies Used 
 
-[![Alt Text](Images/10.JPG)](https://www.python.org/)
+The major aim of in this project is to predict the house prices based on the features using some of the regression techniques and algorithms.
+**1. Random Forest Regressor **
+**2. Support Vector Regressor **
 
 ## Packages Used 
 
-  [![Alt Text](Images/12.png)](https://numpy.org/doc/)  [![Alt Text](Images/11.png)](https://pandas.pydata.org/)    
-
-  [![Alt Text](Images/13.png)](https://seaborn.pydata.org/)  [![Alt Text](Images/15.jpg)](https://matplotlib.org/)
-  
-  [![Alt Text](Images/sk.JPG)](https://scikit-learn.org/stable/)
+[![Alt Text](Images/Images_3.png)](https://www.python.org/)
 
 ## Data Collection 
 
-* I got the dataset from Kaggle if you wanaa get it [click here](https://www.kaggle.com/arshid/iris-flower-dataset).
-* This dataset consists of 3 categories of species which is setosa, versicolor and virginica.
-* We can find two kind of data from kaggle which is CSV data and SQLITE database.
-* Each iris species consists of 50 samples.
-* The features of iris flower are Sepal Length in cm, Sepal Width in cm, Petal Length in cm and Petal Width in cm.
-* In this Iris dataset in avilable on **[sklearn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)** library.
-### The following code can help to get the Iris dataset from sklearn 
+Here if you search the dataset in Kaggle you won’t be get the same dataset from Kaggle. But you’ll be getting another kind of datasets like that. So Data collection part I already mentioned to you using web scrapping method to collecting the data from one of the E-Commerce website in Mobile sections. So here I’d like mentioned the link for you’ll be getting the data. If you wanna get the dataset just [click here](https://github.com/Nivitus/Machine-Learning-Projects/tree/master/Mobile%20Price%20Prediction/Data)
 
-```python
-# TODO : Load Iris Dataset
+## Data Preprocessing
 
-# Load iris Dataset from sklearn
-from sklearn import datasets
-iris = datasets.load_iris()
+Data preprocessing is an important step in the data mining process. The phrase “garbage in, garbage out” is particularly applicable to data mining and machine learning projects. Data-gathering methods are often loosely controlled, resulting in out-of-range values, impossible data combinations, missing values, etc.
+In this project you might be performing lot of preprocessing steps. Because in this dataset is not downloaded from Kaggle or any other data source website. This data retrieve from E-Commerce website. But after I was get the dataset I was make a dataset for model prediction. So you need not to and data preprocessing steps except handling the missing values.
 
-# Load Iris csv dataset
-iris_csv = pd.read_csv('../data/Iris.csv')
+``` bash
+# Shape of the Dataset
+print(“Shape of Training dataset:”, df.shape)
+Shape of Training dataset: (836, 9)
+# Checking null values for training dataset
+df.isnull().sum()
 
-# Load Iris sqlite data
-data = sqlite3.connect('../data/database.sqlite')
-query = data.execute('SELECT * FROM Iris')
-columns = [col[0] for col in query.description]
-iris_db = pd.DataFrame.from_records(data = query.fetchall(), columns = columns)
 ```
+![Null Values](Images/Images_5.png)
 
-## Data Cleaning 
-
-We need not to cleaning the data for making the machine learning model. Because we were retrive the data from kaggle and sklearn, is already have the format of csv(Comma Separated File) It's already getting clean data. So We don't put the stuffs for data cleaning. If you wanna more about the Art of Data Cleaning Process in Machine Learning 
-just [Click Here](https://towardsdatascience.com/the-art-of-cleaning-your-data-b713dbd49726).
 
 ## Exploratory Data Analysis 
+In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task.
 
-In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods.A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task. Here we performed some of the EDA Process to help the audience for visualize the Iris Flower data.
-
-#### Letz Understand the correlation concepts between the data features using heatmap
-```python
-# TODO : Correlation between the data features
-cor = df.drop("Species", axis=1).corr()
-sns.heatmap(data=cor,annot = True,cmap="YlGnBu")
+First Understanding the correlation of features between target and other features 
+``` bash 
+# Plotting the heatmap of correlation between features
+plt.figure(figsize=(14,14))
+sns.heatmap(corr, cbar=False, square= True, fmt=’.2%’, annot=True, cmap=’Greens’)
 ```
-![](Images/22.JPG)
+![EDA](Images/Images_7.png)
 
-#### Next we would Understand the data features in Species Column using pairplot
-```python
-# TODO : Species data features
-sns.pairplot(df,hue='Species')
+### RAM Frequency  
+``` bash
+plt.figure(figsize=(15,10))
+sns.set_style(‘whitegrid’)
+sns.countplot(x=’RAM’,data=df)
 ```
-![](Images/6.JPG)
+![](Images/Images_8.png)
 
-#### Let's understand how the Petal length and Petal width contributes together to classify iris species.
-```python
-# TODO : Sepal and Petal data features
-sns.relplot(x = 'PetalLengthCm', y = 'PetalWidthCm', data = df, hue = 'Species', aspect =1.5, height = 4)
+### Primary Camera Frequency  
+``` bash
+plt.figure(figsize=(15,10))
+sns.set_style(‘whitegrid’)
+sns.countplot(x=’Primary_Cam’,data=df)
 ```
-
-![](Images/00.JPG)
-
-#### Let's understand how the null values are already cleared and also visualize using the heatmap
-```python
-# TODO : Checking the null values into the data features
-sns.heatmap(df.isnull(),yticklabels=False,cbar=False,cmap='viridis')
-```
-![](Images/7.JPG)
-
-**There is no null values into the dataset 
-
-#### Here we count the each speices values using Boxplot
-```python
-# TODO : Checking the number of the each species values into the Iris dataset
-sns.set_style('whitegrid')
-sns.countplot(x='Species',data=df)
-```
-![](Images/3.JPG)
+![](Images/Images_8.png)
 
 ## Model Fitting 
 ``` python
