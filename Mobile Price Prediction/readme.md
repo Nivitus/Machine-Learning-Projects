@@ -210,7 +210,7 @@ Testing Accuracy: 95.33388099982595
 
 ## Team
 
-![](Images/Niv.JPG)
+![](Images/Niv.jpg)
 
 
 
